@@ -1,5 +1,12 @@
-import { render } from 'react-dom'
+import { render } from "react-dom"
+import { MovieContextProvider } from "./hooks/useMovie"
+import { App } from "./App"
 
-import { App } from './App'
-
-render(<App />, document.getElementById('root'))
+render(
+  <>
+    <MovieContextProvider>
+      <App />
+    </MovieContextProvider>
+  </>,
+  document.getElementById("root")
+)

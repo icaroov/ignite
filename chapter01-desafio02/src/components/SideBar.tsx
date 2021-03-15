@@ -1,32 +1,12 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 import { Button } from "../components/Button"
-import { api } from "../services/api"
+import { useMovie } from "../hooks/useMovie"
 
 import "../styles/sidebar.scss"
 
-export interface GenreResponseProps {
-  id: number
-  name: "action" | "comedy" | "documentary" | "drama" | "horror" | "family"
-  title: string
-}
-
-interface SideBarProps {
-  handleClickButton: (id: number) => void
-  selectedGenreId: number
-}
-
-export default function SideBar({
-  handleClickButton,
-  selectedGenreId,
-}: SideBarProps) {
-  const [genres, setGenres] = useState<GenreResponseProps[]>([])
-
-  function fetchGenres() {
-    api.get<GenreResponseProps[]>("genres").then((response) => {
-      setGenres(response.data)
-    })
-  }
+export default function SideBar() {
+  const { fetchGenres, genres, selectedGenreId, handleClickButton } = useMovie()
 
   useEffect(() => {
     fetchGenres()

@@ -1,46 +1,18 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
-import { api } from "../services/api"
 import { MovieCard } from "./MovieCard"
-import { GenreResponseProps } from './SideBar'
+import { useMovie } from "../hooks/useMovie"
 
 import "../styles/content.scss"
 
-interface MovieProps {
-  Title: string
-  Poster: string
-  Ratings: Array<{
-    Source: string
-    Value: string
-  }>
-  Runtime: string
-}
-
-interface ContentProps {
-  selectedGenreId: number
-}
-
-export default function Content({ selectedGenreId }: ContentProps) {
-  const [movies, setMovies] = useState<MovieProps[]>([])
-  const [selectedGenre, setSelectedGenre] = useState<GenreResponseProps>(
-    {} as GenreResponseProps
-  )
-
-  function fetchGenresById(selectedGenreId: number) {
-    api
-      .get<MovieProps[]>(`movies/?Genre_id=${selectedGenreId}`)
-      .then((response) => {
-        setMovies(response.data)
-      })
-  }
-
-  function fetchSelectedGenreById(selectedGenreId: number) {
-    api
-      .get<GenreResponseProps>(`genres/${selectedGenreId}`)
-      .then((response) => {
-        setSelectedGenre(response.data)
-      })
-  }
+export default function Content() {
+  const {
+    fetchGenresById,
+    fetchSelectedGenreById,
+    movies,
+    selectedGenre,
+    selectedGenreId,
+  } = useMovie()
 
   useEffect(() => {
     fetchGenresById(selectedGenreId)
