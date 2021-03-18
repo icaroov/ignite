@@ -34,7 +34,7 @@ Além disso, para se destacar como profissional, precisa-se ir além do código.
 
 #### **Chapter II**
 
--   **⚔ Desafio 1: Criando um hook de carrinho de compras**: Nesse desafio, você deverá criar um hook para gerenciar um carrinho de compras.
+-   **⚔ [Desafio 1: Criando um hook de carrinho de compras](https://github.com/icaroov/ignite-challenges/tree/master/chapter02-desafio01)**: Nesse desafio, você deverá criar um hook para gerenciar um carrinho de compras.
 -   **⚔ Desafio 2: Refactoring de classes e TypeScript**: Nesse desafio, você deverá migrar uma aplicação de Javascript e Class Components para Typescript e Function Components.
 
 ---
