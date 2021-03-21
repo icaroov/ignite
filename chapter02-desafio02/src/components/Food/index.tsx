@@ -69,7 +69,6 @@ const Food = ({ food, handleEditFood, handleDelete }: FoodProps) => {
         </div>
 
         <div className='availability-container'>
-          {console.log(isAvailable)}
           <p>{isAvailable ? 'Disponível' : 'Indisponível'}</p>
 
           <label htmlFor={`available-switch-${food.id}`} className='switch'>
