@@ -41,33 +41,40 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
   const addProduct = async (productId: number) => {
     try {
-      const { data: stock } = await api.get<Stock>(`/stock/${productId}`)
+      let newCart: Product[] = []
 
-      let product = cart.find((product) => product.id === productId)
+      const productExists = cart.find((product) => product.id === productId)
 
-      if (product) {
-        const isInStock = product.amount < stock.amount
+      if (productExists) {
+        const { data: productStock } = await api.get<Stock>(
+          `/stock/${productId}`
+        )
 
-        if (isInStock) {
-          product.amount++
-          saveCart([...cart])
+        const productAmount = productExists ? productExists.amount : 0
+
+        if (productAmount < productStock.amount) {
+          newCart = cart.map((product) => {
+            if (product.id === productId) {
+              return {
+                ...product,
+                amount: product.amount + 1,
+              }
+            }
+
+            return product
+          })
         } else {
           toast.error('Quantidade solicitada fora de estoque')
+          return
         }
       } else {
         const { data: product } = await api.get<Product>(
           `/products/${productId}`
         )
-
-        if (stock.amount < 1) {
-          toast.error('Quantidade solicitada fora de estoque')
-        } else {
-          product.amount = 1
-
-          const newCart = [...cart, product]
-          saveCart(newCart)
-        }
+        newCart = [...cart, { ...product, amount: 1 }]
       }
+
+      saveCart(newCart)
     } catch {
       toast.error('Erro na adição do produto')
     }
@@ -94,25 +101,24 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
     amount,
   }: UpdateProductAmount) => {
     try {
-      if (amount <= 0) {
-        return
-      }
+      if (amount <= 0) return
 
-      let product = cart.find((product) => product.id === productId)
+      const { data: productStock } = await api.get<Stock>(`/stock/${productId}`)
 
-      if (product) {
-        const { data: productStock } = await api.get<Stock>(
-          `/stock/${productId}`
-        )
+      if (amount <= productStock.amount) {
+        const newCart = cart.map((product) => {
+          if (product.id === productId) {
+            return {
+              ...product,
+              amount,
+            }
+          }
+          return product
+        })
 
-        if (amount <= productStock.amount) {
-          product.amount = amount
-          saveCart([...cart])
-        } else {
-          toast.error('Quantidade solicitada fora de estoque')
-        }
+        saveCart(newCart)
       } else {
-        toast.error('Erro na alteração de quantidade do produto')
+        toast.error('Quantidade solicitada fora de estoque')
       }
     } catch {
       toast.error('Erro na alteração de quantidade do produto')
