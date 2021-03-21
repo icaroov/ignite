@@ -20,7 +20,7 @@ interface FoodProps {
 }
 
 const Food = ({ food, handleEditFood, handleDelete }: FoodProps) => {
-  const [isAvailable, setIsAvailable] = useState<boolean>()
+  const [isAvailable, setIsAvailable] = useState(false)
 
   const toggleAvailable = async () => {
     await api.put(`/foods/${food.id}`, {
@@ -52,7 +52,7 @@ const Food = ({ food, handleEditFood, handleDelete }: FoodProps) => {
           <button
             type='button'
             className='icon'
-            onClick={() => setEditingFood}
+            onClick={setEditingFood}
             data-testid={`edit-food-${food.id}`}
           >
             <FiEdit3 size={20} />
@@ -69,6 +69,7 @@ const Food = ({ food, handleEditFood, handleDelete }: FoodProps) => {
         </div>
 
         <div className='availability-container'>
+          {console.log(isAvailable)}
           <p>{isAvailable ? 'Disponível' : 'Indisponível'}</p>
 
           <label htmlFor={`available-switch-${food.id}`} className='switch'>
@@ -76,7 +77,7 @@ const Food = ({ food, handleEditFood, handleDelete }: FoodProps) => {
               id={`available-switch-${food.id}`}
               type='checkbox'
               checked={isAvailable}
-              onChange={() => toggleAvailable}
+              onChange={toggleAvailable}
               data-testid={`change-status-food-${food.id}`}
             />
             <span className='slider' />
