@@ -42,6 +42,7 @@ Além disso, para se destacar como profissional, precisa-se ir além do código.
 
 ## 📁 Projetos
 - [Finance App](https://github.com/icaroov/finance-app)
+- [Ig News](https://github.com/icaroov/ig-news)
 
 ## 👨‍💻 Autor
 
