@@ -35,6 +35,11 @@ Além disso, para se destacar como profissional, precisa-se ir além do código.
 -   **⚔ [Desafio 1: Criando um hook de carrinho de compras](https://github.com/icaroov/ignite-challenges/tree/master/chapter02-desafio01)**: Nesse desafio, você deverá criar um hook para gerenciar um carrinho de compras.
 -   **🛡 [Desafio 2: Refactoring de classes e TypeScript](https://github.com/icaroov/ignite-challenges/tree/master/chapter02-desafio02)**: Nesse desafio, você deverá migrar uma aplicação de Javascript e Class Components para Typescript e Function Components.
 
+#### **Chapter III**
+
+-   **⚔ Desafio: Criando uma aplicação do zero**: Nesse desafio você deve criar do zero uma aplicação de um blog com Prismic CMS a partir de um layout do Figma.
+-   **🛡 Desafio: Adicionando features ao blog**: Nesse desafio você deve adicionar novas features ao projeto desenvolvido no desafio anterior.
+
 ## 👨‍💻 Autor
 
 <a href="https://github.com/icaroov">
