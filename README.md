@@ -8,10 +8,10 @@
 
 <p align="center">
  <a href="#-sobre-o-ignite">Sobre</a> •
- <a href="#-chapters">Chapters</a> • 
+ <a href="#-desafios">Desafios</a> • 
+ <a href="#-projetos">Projetos</a> • 
  <a href="#-autor">Autor</a>
 </p>
-
 
 ## 💻 Sobre o Ignite
 
@@ -21,19 +21,28 @@ Nesse programa entra-se a fundo em uma tecnologia específica, através de um cu
 
 Além disso, para se destacar como profissional, precisa-se ir além do código. Por isso, o Ignite traz também uma trilha onde o aluno pode desenvolver habilidades que vão ajudar a destacar-se no mercado - as conhecidas soft skills.
 
-✔ **Esse repositório visa reunir todos os desafios propostos ao decorrer da realização de cada capítulo.**
+✔ **Esse repositório visa reunir todos os desafios e projetos propostos ao decorrer da realização de cada capítulo.**
 
-## 📄 Chapters ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
+## 🎯 Desafios ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
 
 #### **Chapter I**  
 
 -   **⚔ [Desafio 1: Conceitos do React](https://github.com/icaroov/ignite-challenges/tree/master/chapter01-desafio01)**: Nesse desafio, você deverá criar uma aplicação para treinar o que aprendeu até agora no ReactJS. Essa será uma aplicação onde o seu principal objetivo é uma pequena aplicação de atividades a fazer, para treinar um pouco mais sobre manipulação do estado no React.
--   **⚔ [Desafio 2: Componentizando a aplicação](https://github.com/icaroov/ignite-challenges/tree/master/chapter01-desafio02)**: Nesse desafio iremos dividir uma aplicação em componentes afim de isolar as responsabilidades e facilitar a manutenção do código.
+-   **🛡 [Desafio 2: Componentizando a aplicação](https://github.com/icaroov/ignite-challenges/tree/master/chapter01-desafio02)**: Nesse desafio iremos dividir uma aplicação em componentes afim de isolar as responsabilidades e facilitar a manutenção do código.
 
 #### **Chapter II**
 
 -   **⚔ [Desafio 1: Criando um hook de carrinho de compras](https://github.com/icaroov/ignite-challenges/tree/master/chapter02-desafio01)**: Nesse desafio, você deverá criar um hook para gerenciar um carrinho de compras.
--   **⚔ [Desafio 2: Refactoring de classes e TypeScript](https://github.com/icaroov/ignite-challenges/tree/master/chapter02-desafio02)**: Nesse desafio, você deverá migrar uma aplicação de Javascript e Class Components para Typescript e Function Components.
+-   **🛡 [Desafio 2: Refactoring de classes e TypeScript](https://github.com/icaroov/ignite-challenges/tree/master/chapter02-desafio02)**: Nesse desafio, você deverá migrar uma aplicação de Javascript e Class Components para Typescript e Function Components.
+
+#### **Chapter III**
+
+-   **⚔ Desafio: Criando uma aplicação do zero**: Nesse desafio você deve criar do zero uma aplicação de um blog com Prismic CMS a partir de um layout do Figma.
+-   **🛡 Desafio: Adicionando features ao blog**: Nesse desafio você deve adicionar novas features ao projeto desenvolvido no desafio anterior.
+
+## 📁 Projetos
+- [Finance App](https://github.com/icaroov/finance-app)
+- [Ig News](https://github.com/icaroov/ig-news)
 
 ## 👨‍💻 Autor
 
@@ -41,4 +50,3 @@ Além disso, para se destacar como profissional, precisa-se ir além do código.
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/20347877?s=460&u=85f5e8a7d10a74a188284027280d8e2e374f17b1&v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Ícaro Oliveira</b></sub></a> <a href="https://github.com/icaroov" title="Rocketseat">⚡</a>
- <br />
