@@ -15,6 +15,10 @@ Essa será uma aplicação onde o seu principal objetivo é criar um blog do 
 - Entre outros.
 
 ## ⚡ Rondando a aplicação
+Instale as dependências com:
+```
+yarn
+```
 Inicie o projeto com:
 ```
 yarn dev
