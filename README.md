@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Ignite" src="https://res.cloudinary.com/ddi5agea1/image/upload/v1615811792/1920x1080_svmfrh.png" />
+    <img alt="Ignite" src="https://res.cloudinary.com/ddi5agea1/image/upload/v1615811792/1920x1080_svmfrh.png" height="350px" />
 </h1>
 
 <h2 align="center"> 
@@ -39,6 +39,11 @@ Além disso, para se destacar como profissional, precisa-se ir além do código.
 
 -   **⚔ [Desafio: Criando uma aplicação do zero](https://github.com/icaroov/ignite/tree/master/chapter03-desafio01)**: Nesse desafio você deve criar do zero uma aplicação de um blog com Prismic CMS a partir de um layout do Figma.
 -   **🛡 Desafio: Adicionando features ao blog**: Nesse desafio você deve adicionar novas features ao projeto desenvolvido no desafio anterior.
+
+#### **Chapter IV**
+
+-   **🛡 [Desafio: Interface com Chakra UI](https://github.com/icaroov/ignite/tree/master/chapter04-desafio01)**: Nesse desafio, você deverá desenvolver toda a interface de uma aplicação utilizando como base o Chakra UI.
+-   **⚔ Desafio: Upload de imagens**: Nesse desafio você deve realizar o upload e listagem de imagens utilizando React Query, React Hook Form e Chakra UI.
 
 ## 📁 Projetos
 - [Finance App](https://github.com/icaroov/finance-app)
