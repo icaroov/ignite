@@ -37,12 +37,13 @@ Além disso, para se destacar como profissional, precisa-se ir além do código.
 
 #### **Chapter III**
 
--   **⚔ Desafio: Criando uma aplicação do zero**: Nesse desafio você deve criar do zero uma aplicação de um blog com Prismic CMS a partir de um layout do Figma.
+-   **⚔ [Desafio: Criando uma aplicação do zero](https://github.com/icaroov/ignite/tree/master/chapter03-desafio01)**: Nesse desafio você deve criar do zero uma aplicação de um blog com Prismic CMS a partir de um layout do Figma.
 -   **🛡 Desafio: Adicionando features ao blog**: Nesse desafio você deve adicionar novas features ao projeto desenvolvido no desafio anterior.
 
 ## 📁 Projetos
 - [Finance App](https://github.com/icaroov/finance-app)
 - [Ig News](https://github.com/icaroov/ig-news)
+- [DashGo](https://github.com/icaroov/dashgo)
 
 ## 👨‍💻 Autor
 
