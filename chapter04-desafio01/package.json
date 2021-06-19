@@ -1,0 +1,26 @@
+{
+  "name": "chapter04-desafio01",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.6.4",
+    "@emotion/react": "11",
+    "@emotion/styled": "11",
+    "framer-motion": "4",
+    "next": "11.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "swiper": "^6.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "@types/react": "^17.0.11",
+    "typescript": "^4.3.4"
+  }
+}
