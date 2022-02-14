@@ -1,17 +1,7 @@
-<h1 align="center">
+<div align="center">
     <img alt="Ignite" src="https://res.cloudinary.com/ddi5agea1/image/upload/v1615811792/1920x1080_svmfrh.png" height="350px" />
-</h1>
-
-<h2 align="center"> 
-	Ignite - Trilha ReactJS
-</h2>
-
-<p align="center">
- <a href="#-sobre-o-ignite">Sobre</a> •
- <a href="#-desafios">Desafios</a> • 
- <a href="#-projetos">Projetos</a> • 
- <a href="#-autor">Autor</a>
-</p>
+    <p>Ignite - Trilha ReactJS</p>
+</div>
 
 ## 💻 Sobre o Ignite
 
